@@ -3,6 +3,7 @@ package com.plcoding.cleanarchitecturenoteapp.ui.theme
 import androidx.compose.ui.graphics.Color
 
 val DarkGray = Color(0xFF202020)
+val LightGray = Color(0xFFD3D3D3)
 val LightBlue = Color(0xFFD7E8DE)
 
 val RedOrange = Color(0xffffab91)
