@@ -38,6 +38,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.core.graphics.ColorUtils
 import com.plcoding.cleanarchitecturenoteapp.data.model.Note
+import com.plcoding.cleanarchitecturenoteapp.ui.theme.DarkGray
 
 @ExperimentalAnimationApi
 @Composable
@@ -182,7 +183,7 @@ fun NoteItem(
             Text(
                 text = note.title,
                 style = MaterialTheme.typography.headlineSmall,
-                color = MaterialTheme.colorScheme.onSurface,
+                color = DarkGray,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
@@ -190,7 +191,7 @@ fun NoteItem(
             Text(
                 text = note.content,
                 style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onSurface,
+                color = DarkGray,
                 maxLines = 10,
                 overflow = TextOverflow.Ellipsis
             )
