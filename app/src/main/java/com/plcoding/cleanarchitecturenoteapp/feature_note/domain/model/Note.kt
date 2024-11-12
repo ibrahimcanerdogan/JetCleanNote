@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.plcoding.cleanarchitecturenoteapp.ui.theme.*
 
-@Entity
+@Entity(tableName = "note")
 data class Note(
     val title: String,
     val content: String,
