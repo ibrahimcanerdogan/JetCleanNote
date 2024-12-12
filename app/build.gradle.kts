@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.plcoding.cleanarchitecturenoteapp"
+    namespace = "com.ibrahimcanerdogan.cleannote"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.plcoding.cleanarchitecturenoteapp"
+        applicationId = "com.ibrahimcanerdogan.cleannote"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
