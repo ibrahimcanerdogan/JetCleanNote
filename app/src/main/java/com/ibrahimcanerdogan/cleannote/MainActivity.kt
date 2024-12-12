@@ -5,14 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.ExperimentalAnimationApi
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
-import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.ibrahimcanerdogan.cleannote.ui.navigation.NoteNavigation
-import com.ibrahimcanerdogan.cleannote.ui.theme.CleanArchitectureNoteAppTheme
+import com.ibrahimcanerdogan.cleannote.ui.theme.CleanNoteAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,7 +19,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CleanArchitectureNoteAppTheme {
+            CleanNoteAppTheme {
                 Surface {
                     NoteNavigation()
                 }
