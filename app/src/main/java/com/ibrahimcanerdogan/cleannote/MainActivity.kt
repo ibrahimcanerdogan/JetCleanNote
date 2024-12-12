@@ -8,6 +8,7 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.ibrahimcanerdogan.cleannote.ui.navigation.NoteNavigation
@@ -23,12 +24,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CleanArchitectureNoteAppTheme {
-                Scaffold (
-                    modifier = Modifier.fillMaxSize()
-                ) { paddingValues ->
-                    NoteNavigation(
-                        modifier = Modifier.fillMaxSize().padding(paddingValues)
-                    )
+                Surface {
+                    NoteNavigation()
                 }
             }
         }

@@ -11,12 +11,10 @@ import androidx.navigation.navArgument
 import com.ibrahimcanerdogan.cleannote.ui.view.edit.AddEditNoteScreen
 import com.ibrahimcanerdogan.cleannote.ui.view.list.NoteListScreen
 
-@ExperimentalAnimationApi
 @Composable
-fun NoteNavigation(modifier: Modifier) {
+fun NoteNavigation() {
     val navController = rememberNavController()
     NavHost(
-        modifier = modifier,
         navController = navController,
         startDestination = NoteScreen.NotesScreen.route
     ) {

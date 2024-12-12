@@ -39,7 +39,6 @@ import androidx.core.graphics.ColorUtils
 import com.ibrahimcanerdogan.cleannote.data.model.Note
 import com.ibrahimcanerdogan.cleannote.ui.theme.DarkGray
 
-@ExperimentalAnimationApi
 @Composable
 fun NoteListScreen(
     navController: NavController,
